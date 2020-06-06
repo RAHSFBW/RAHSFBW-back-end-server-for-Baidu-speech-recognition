@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0"
+         metadata-complete="false">  <!-- true 不扫描注解 false扫描注解 -->
+
+<!--第一种配置方式-->
+  <!--注册Servlet-->
+  <servlet>
+    <servlet-name>Hello</servlet-name>
+    <servlet-class>com.henry.servlet.HelloServlet</servlet-class>
+  </servlet>
+  <!-- Servlet的请求路径 -->
+  <servlet-mapping>
+    <servlet-name>Hello</servlet-name>
+    <url-pattern>/1</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
